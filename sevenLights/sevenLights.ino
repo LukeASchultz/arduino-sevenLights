@@ -143,6 +143,9 @@ void checkWin() {
   }
 
   if (win) {
+    for (int i = 0; i <= 7; i++) {
+      digitalWrite(i + 2, HIGH);
+    }
     delay(500);
     for (int i = 0; i <= 7; i++) {
       digitalWrite(i + 2, LOW);
